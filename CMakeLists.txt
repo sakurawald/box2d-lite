@@ -6,6 +6,8 @@ add_subdirectory(src)
 
 option(BOX2D_BUILD_SAMPLES "Build the box2d-lite sample program" ON)
 
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
+
 if (BOX2D_BUILD_SAMPLES)
 
 	add_subdirectory(extern/glad)
