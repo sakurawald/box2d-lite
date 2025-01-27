@@ -8,6 +8,8 @@ option(BOX2D_BUILD_SAMPLES "Build the box2d-lite sample program" ON)
 
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
+SET(CMAKE_CXX_FLAGS_DEBUG "-g3")
+
 if (BOX2D_BUILD_SAMPLES)
 
 	add_subdirectory(extern/glad)
